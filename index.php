@@ -11,21 +11,10 @@
 </head>
 <body>
     <div class="grid-container">
-        <header class="header">
-            <div class="title-icon">
-                <img src="img/logo_transparent.png" alt="logo-imagen" class="logo">
-                <h2 class="title">Develop AI</h2>
-            </div>
-            <nav class="navigation">
-                <ul class="nav-menu">
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="html/galeria.html">Galeria</a></li>
-                    <li><a href="html/nosotros.html">Nosotros</a></li>
-                    <li><a href="html/contacto.html">Contactanos</a></li>    
-                </ul>
-            </nav>
-        </header>
-
+        <!-- Nav -->
+        <?php 
+        include_once './php/nav.php'
+        ?>
         <!-- Using method BEM -->
         <main class="main-container">
             <div class="container__img-background">
@@ -96,13 +85,10 @@
             </div>
         </main>
         
-        
         <!-- Footer  -->
         <?php
         include_once './php/footer.php' 
         ?>
-
-
 
     </div>
 

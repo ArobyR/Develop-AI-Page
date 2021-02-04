@@ -47,13 +47,11 @@
                 </div>
             </div>
         </main>
-
         <!-- Footer -->
-        <?php 
-            include_once '../php/nav.php'
+        <?php
+        include_once 'php/footer.php';
         ?>
     </div>
-    
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="../main.js"></script>

@@ -45,59 +45,14 @@
 
                 <h2 class="address">Email   o  Email</h2>
             </div>
-
-            <div class="content__links">
-                <h2 class="links__title">Siguenos</h2>
-                <div class="links">
-                    <!--Put the icons-->
-                    <a href="#"><img src="../img/tw.png" alt="img-twitter"></a>
-                    <a href="#"><img src="../img/github.png" alt="img-github"></a>
-                    <a href="#"><img src="../img/discord.png" alt="img-discord"></a>
-                    <a href="#"><img src="../img/email.png" alt="img-email"></a>
-                    <a href="#"><img src="../img/youtube.png" alt="img-youtube"></a>
-                </div>
-            </div>
-
+            <!-- Social media -->
+            <?php
+            include_once 'php/social_media.php';
+            ?>
         </div>
-
-        <footer class="footer-container">
-            <img class="img-footer" src="../img/logo_transparent.png" alt="logo">
-            
-            <div class="container__links">
-                <div class="links__sections">
-                    <div class="links__titles"><h3>Proyectos</h3></div>
-                    <hr>
-                    <ul>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">Machine Learning</a></li>
-                        <li><a href="#">Artificial Intelligence</a></li>
-                        <li><a href="#">Developers</a></li>
-                    </ul>
-                </div>
-                <div class="links__sections">
-                    <div class="links__titles"><h3>Ultimo</h3></div>
-                    <hr>
-                    <ul>
-                        <li><a href="#">Investigacion</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Avances</a></li>
-
-                    </ul>
-                </div>
-
-                <div class="links__sections">
-                    <div class="links__titles"><h3>Recursos</h3></div>
-                    <hr>
-                    <ul>
-                        <li><a href="#">Papers </a></li>
-                        <li><a href="#">Fuentes externas</a></li>
-                        <li><a href="#">Informacion</a></li>
-                        <li><a href="#">Aprende</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <?php
+        include_once 'php/footer.php';
+        ?>
     </div>
-
 </body>
 </html>

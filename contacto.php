@@ -7,26 +7,16 @@
     <meta name="author" content="Aroby Rosario">
     <meta name="keywords" content="develop ai, ai, machine learning, inteligencia artificial">
     <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32">
-    <link rel="stylesheet" href="../css/contacto.css">
-    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="css/contacto.css">
+    <link rel="stylesheet" href="css/styles.css">
     <title>Develop AI | Contactanos</title>
 </head>
 <body>
     <div class="grid-container">
-        <header class="header">
-            <div class="title-icon">
-                <img src="../img/logo_transparent.png" alt="logo-imagen" class="logo">
-                <h2 class="title">Develop AI</h2>
-            </div>
-            <nav class="navigation">
-                <ul class="nav-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contactanos</a></li>    
-                </ul>
-            </nav>
-        </header>
+        <!-- Nav -->
+        <?php 
+        include_once './php/nav.php';
+        ?>
 
         <div class="main__container">
             <h2 class="title title--conctact">Envianos un email</h2>

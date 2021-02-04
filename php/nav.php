@@ -5,10 +5,10 @@
     </div>
     <nav class="navigation">
         <ul class="nav-menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="html/galeria.html">Galeria</a></li>
-            <li><a href="html/nosotros.html">Nosotros</a></li>
-            <li><a href="html/contacto.html">Contactanos</a></li>
+            <li><a href="./index.php">Home</a></li>
+            <li><a href="./galeria.php">Galeria</a></li>
+            <li><a href="./nosotros.php">Nosotros</a></li>
+            <li><a href="./contacto.php">Contactanos</a></li>
         </ul>
     </nav>
 </header>

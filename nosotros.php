@@ -6,27 +6,16 @@
     <meta name="author" content="Aroby Rosario">
     <meta name="keywords" content="develop ai, ai, machine learning, inteligencia artificial">
     <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32">
-    <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="../css/nosotros.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/nosotros.css">
     <title>Develop AI | Nosotros</title>
 </head>
 <body>
     <div class="grid-container">
-        <header class="header">
-            <div class="title-icon">
-                <img src="../img/logo_transparent.png" alt="logo-imagen" class="logo">
-                <h2 class="title">Develop AI</h2>
-            </div>
-            <nav class="navigation">
-                <ul class="nav-menu">
-                    <li><a href="../index.html">Home</a></li>
-                    <li><a href="galeria.html">Galeria</a></li>
-                    <li><a href="nosotros.html">Nosotros</a></li>
-                    <li><a href="contacto.html">Contactanos</a></li>
-                </ul>
-            </nav>
-        </header>
-
+        <!-- Nav -->
+        <?php 
+        include_once './php/nav.php';
+        ?>
         <main class="main-container">
             <div class="about__container container__sections">
                 <div class="about__section section">
@@ -59,42 +48,10 @@
             </div>
         </main>
 
-
-        <footer class="footer-container">
-            <img class="img-footer" src="../img/logo_transparent.png" alt="logo">
-            <div class="container__links">
-                <div class="links__sections">
-                    <div class="links__titles"><h3>Proyectos</h3></div>
-                    <hr>
-                    <ul>
-                        <li><a href="#">API</a></li>
-                        <li><a href="#">Machine Learning</a></li>
-                        <li><a href="#">Artificial Intelligence</a></li>
-                        <li><a href="#">Developers</a></li>
-                    </ul>
-                </div>
-                <div class="links__sections">
-                    <div class="links__titles"><h3>Ultimo</h3></div>
-                    <hr>
-                    <ul>
-                        <li><a href="#">Investigacion</a></li>
-                        <li><a href="#">Eventos</a></li>
-                        <li><a href="#">Avances</a></li>
-
-                    </ul>
-                </div>
-                <div class="links__sections">
-                    <div class="links__titles"><h3>Recursos</h3></div>
-                    <hr>
-                    <ul>
-                        <li><a href="#">Papers </a></li>
-                        <li><a href="#">Fuentes externas</a></li>
-                        <li><a href="#">Informacion</a></li>
-                        <li><a href="#">Aprende</a></li>
-                    </ul>
-                </div>
-            </div>
-        </footer>
+        <!-- Footer -->
+        <?php 
+            include_once '../php/nav.php'
+        ?>
     </div>
     
     <!-- Scroll Reveal -->

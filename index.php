@@ -17,9 +17,10 @@
         ?>
         <!-- Using method BEM -->
         <main class="main-container">
-            <div class="container__img-background">
-                <a class="btn-learn" href="#">Aprende mas</a>
-            </div>
+            <!-- Banner -->
+            <?php 
+            include_once './php/banner.php'
+            ?>
             <div class="container__sections">
                 <div class="section"> <!-- Block -->
                     <h1 class="section__title">Inteligencia Artificial</h1>

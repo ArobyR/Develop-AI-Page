@@ -1,3 +1,9 @@
+<?php
+    include_once './admin/about.php';
+    $obj_about = new About();
+    $info = $obj_about->get_about();
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,34 +24,17 @@
         ?>
         <main class="main-container">
             <div class="about__container container__sections">
-                <div class="about__section section">
+                <div class="section">
                     <h2 class="title title--conctact">Nosotros</h2>
-
-                    <p class="section__paragraph">
-                        Somos una startup dedicada al desarrollo de nuevas tecnologías enfocadas en el la <span class="bold">Inteligencia Artificial.</span> 
-                        Nuestro objetivo es revolucionar todo el campo del <span class="bold">machine learning</span> con el unico proposito de ayudar a la humanidad mediante nuestro trabajo,
-                        distribuyendo nuestros resultados y estudios por los diferentes medios como papers, conferencias, redes social y otros medios informativos.
-                    </p>
-                    <img src="../img/startup.jpg" alt="img-about" class="section__img--about section__img">
                 </div>
-                <div class="about__section section">
-                    <img src="../img/code22.jpg" alt="img-about" class="section__img--about section__img">
-
-                    <p class="section__paragraph">
-                        Conocemos el potencial del <span class="bold">Open Source (softfware de código libre)</span> y de toda la comunidad de desarrolladores,
-                        por ende abriremos el <span class="bold">código</span> de la mayoría de nuestros proyectos, las contribuciones mas relevantes e interesantes serán añadidas
-                        y notificadas a todos. En un futuro no muy lejano hemos contemplado premiar y dar a conocer los miembros mas destacados de nuestra comunidad.
-                    </p>
-                </div>
-                <div class="about__section section">
-                    <p class="section__paragraph">
-                        Nosotros hemos desarrollado varios proyectos para incentivar a aprender y estudiar los diferentes campos del desarrollo de software.
-                         Nuestra visión del futuro con esto es dar a conocer la importancia de saber programar, y como esto cambia nuestras vidas al tener que aprender algo nuevo
-                        cada dia. 
-                    </p>
-                    <img src="../img/coding.jpg" alt="img-about" class="section__img--about section__img">
-                </div>
-            </div>
+                <?php foreach($info as $about) { ?>
+                    <div class="about__section section">
+                        <p class="section__paragraph">
+                            <?=$about['description']?>                      
+                        </p>
+                        <img src="<?=$about['url_img']?>" alt="img-about" class="section__img--about section__img">
+                    </div>    
+                <?php } ?>
         </main>
         <!-- Footer -->
         <?php
@@ -54,6 +43,6 @@
     </div>
     <!-- Scroll Reveal -->
     <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="../main.js"></script>
+    <script src="./main.js"></script>
 </body>
 </html>

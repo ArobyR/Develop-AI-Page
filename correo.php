@@ -2,7 +2,7 @@
 if(isset($_POST)) {
     ini_set( 'display_errors', 1 );
     error_reporting( E_ALL );
-    $destinatario = 'ar.rosario007@outlook.com';
+    $destinatario = 'mail@mail.com';
     $nombre = $_POST['nombre'];
     $email = $_POST['email'];
     $tema = $_POST['tema'];

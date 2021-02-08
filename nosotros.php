@@ -1,4 +1,5 @@
 <?php
+    include_once './autenticacion.php';
     include_once './admin/about.php';
     $obj_about = new About();
     $info = $obj_about->get_about();

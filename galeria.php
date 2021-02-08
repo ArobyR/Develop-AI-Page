@@ -1,4 +1,5 @@
 <?php
+include_once 'autenticacion.php';
 include_once './admin/galeria.php';
 $obj_galery = new Galery();
 $info_galery = $obj_galery->get_galery();
@@ -13,8 +14,8 @@ $info_galery = $obj_galery->get_galery();
     <meta name="author" content="Aroby Rosario">
     <meta name="keywords" content="develop ai, ai, machine learning, inteligencia artificial">
     <link rel="icon" type="image/png" href="../img/favicon.png" sizes="32x32">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/galeria.css">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/galeria.css">
     <title>Develop AI | Galeria</title>
 </head>
 
